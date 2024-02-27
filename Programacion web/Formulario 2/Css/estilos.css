@@ -1,0 +1,66 @@
+body, html {
+    margin: 40px;
+    padding: 40px;
+    height: 80%;
+}
+
+#glass-container {
+    display: flex;
+    justify-content: center;
+    align-items: rigth;
+    height: 40%;
+}
+
+#glass {
+    background-color: rgba(242, 195, 195, 0.4);
+    padding: 40px;
+    border-radius: 50px;
+    backdrop-filter: blur(10px);
+    text-align: center;
+}
+
+.logo {
+    width: 10px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #b3b8e5;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 40%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    width: 40%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #dc60ac;
+    color: rgb(185, 17, 17);
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #587edf;
+}
+
+/* Estilo del video de fondo */
+#video-bg {
+    
+    right: 40px;
+    bottom: 40px;
+    min-width: 20%;
+    min-height: 20%;
+    z-index: -1;
+}
