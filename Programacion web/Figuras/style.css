@@ -1,0 +1,41 @@
+.circulo{
+    width: 100px;/*Ancho del circulo*/
+    height: 100px;/*Altura del circulo*/
+    border-radius: 50%;/*Hace que el borde sea redondo para la figura*/
+    background-color: blue;
+    border-style: solid;
+    margin: 0%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.Rectangulo{
+    width: 100px;/*Ancho del circulo*/
+    height: 100px;/*Altura del circulo*/
+    border: 150px solid transparent;/*Hace que el borde sea redondo para la figura*/
+    border-top: 0;
+    border-bottom: 150px solid rgb(232,6,176);
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.Triangulo{
+width: 100px;
+height: 100px;
+border: 150px solid transparent;
+border-top: 0;
+margin-left: auto;
+margin-right: 0;
+}
+.Rombo{
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+    position: relative;
+    transform: rotate(45deg);
+    margin-top: 50px;
+    margin-left: 40px;
+    border-style: solid;
+    margin-left: auto;
+    margin-right: auto;
+}
