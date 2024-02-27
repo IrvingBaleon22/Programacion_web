@@ -1,0 +1,126 @@
+body {/* Propiedades de nuestro cuerpo de la pagina */
+    display: flex;/* Distribuye los elementos como una fila flexbox */
+    align-items: center;/* Alinea los elementos verticalmente en el centro */
+    justify-content: center;/* Alinea los elementos horizontalmente en el centro */
+    height: 100vh;/* Altura del cuerpo igual a la altura de la ventana del navegador */
+    background: #000;/*Para cambiar el color de nuestro fondo */
+  }
+  
+  
+  .impostor {/* Cada clase contiene un objeto */
+    position: relative;/* Posicionamiento relativo */
+  }
+  .impostor .body {/* Propiedades del cuerpo de nuestro personaje dibujado en nuestro lienzo */
+    position: relative;/* Posicionamiento relativo */
+    width: 300px; /* Ancho del cuerpo */
+    height: 420px; /* Altura del cuerpo */
+    overflow: hidden; /* Oculta el contenido que se desborda */
+    border-radius: 35% 45% 0 0;/* Radio de borde para redondear las esquinas superiores */
+    border: 30px solid #000;/* Borde sólido negro */
+  }
+  .impostor .body .fill {/* Relleno del cuerpo del personaje */
+    position: absolute;/* Posicionamiento absoluto */
+    width: 100%;/* Ancho del relleno */
+    height: 100%;/* Altura del relleno */
+    background: #f90707;/* Color de relleno rojo */
+  }
+  .impostor .body .shadow {/* Sombra del cuerpo del personaje */
+    position: absolute;/* Posicionamiento absoluto */
+    width: 100%;/* Ancho de la sombra */
+    height: 90%;/* Altura de la sombra */
+    background: #f90707;/* Color de la sombra rojo */
+    border-radius: 0% 10% 25% 48% / 20% 0% 100% 100%;/* Radio de borde para dar forma a la sombra */
+  }
+  .impostor .glass-bowl {/* Tazón de vidrio */
+    position: absolute;/* Posicionamiento absoluto */
+    width: 220px;/* Ancho del tazón de vidrio */
+    height: 130px;/* Altura del tazón de vidrio */
+    background: #4A646D;/* Color del tazón de vidrio */
+    top: 90px;/* Posicionamiento superior del tazón de vidrio */
+    right: -20px;/* Posicionamiento derecho del tazón de vidrio */
+    border: 30px solid black;/* Borde sólido negro */
+    border-radius: 25% 45% 40% 40% / 50%;/* Radio de borde para redondear las esquinas */
+    transform: rotate(-4deg);/* Rotación del tazón de vidrio */
+    overflow: hidden;/* Oculta el contenido que se desborda */
+  }
+  .impostor .glass-bowl .shadow-blue {/* Sombra azul del tazón de vidrio */
+    position: absolute;/* Posicionamiento absoluto */
+    right: 0;/* Posicionamiento derecho de la sombra azul */
+    width: 90%;/* Ancho de la sombra */
+    height: 70px;/* Altura de la sombra */
+    background: #94C9DB;/* Color de la sombra azul */
+    border-radius: 10% 10% 100% 100% / 100% 100% 50% 100%/* Radio de borde para dar forma a la sombra */
+    
+  }
+  .impostor .glass-bowl .shadow-white {
+    position: absolute;/* Posicionamiento absoluto */
+    top: 10px;/* Posicionamiento superior del tazón de vidrio */
+    right: 40px;/* Posicionamiento derecho de la sombra blanca */
+    width: 100px;/*Altura de nuestro personaje*/
+    height: 40px;/*Anchura de nuestro personaje*/
+    background: white;/*Color de la sombra*/
+    border-radius: 30% 70% 30% 30% / 30% 70% 30% 60%;/*Radio de borde para dar forma a la sombra*/
+  }
+  .impostor .legs {
+    display: flex;/*Distribuye los elementos como una fila flexbox*/
+    justify-content: space-between;/*espacio entre  en el centro y el elemento */
+    transform: translatey(-30px);
+  }
+  .impostor .legs .leg-left {
+    width: 110px;/*Ancho del cuerpo*/
+    height: 130px;/*Altura del cuerpo*/
+    background: #f90707;
+    border-left: 30px solid #000; 
+    border-bottom: 30px solid #000;
+    border-right: 30px solid #000;
+    border-radius: 0 0 40% 40%
+  }
+  .impostor .legs .leg-right {
+    position: relative;
+    width: 90px;/*Ancho del cuerpo*/
+    height: 105px;/*Altura del cuerpo*/
+    background: #f90707;/**/
+    border-left: 30px solid #000; 
+    border-bottom: 30px solid #000;
+    border-right: 30px solid #000;
+    border-radius: 0 0 40% 40%;
+  }
+  .impostor .legs .leg-right:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -60%;
+    width: 100px;
+    height: 30px;
+    background: black;
+    border-radius: 0 0 100% 0
+  }
+  .impostor .backpack {
+    position: absolute;
+    height: 280px;
+    width: 90px;
+    background: red;
+    border: 30px solid #000;
+    border-radius: 40% 0 0 40% / 15%;
+    left: -75px;
+    top: 130px;
+    overflow: hidden;
+  }
+  .impostor .backpack .shadow {
+    position: absolute;
+    width: 100%;
+    height: 85%;
+    background: #f90707;
+    bottom: 0;
+    border-radius: 40% 0 0 0 / 10% 0 0 0;
+  }
+  .impostor .floor-shadow {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translatex(-50%);
+    width: 450px;
+    height: 80px;
+    background: #77e7e7;
+    border-radius: 50%;
+  }
